@@ -1,0 +1,65 @@
+
+
+footer{
+
+width: 100%;
+padding-top: 3em;
+padding-bottom:1em ;
+background-color: #000;
+
+.ConteinerRodape{
+
+padding: 0 40px;
+
+.BoxRodape{
+
+display: flex;
+margin: 0 -35px;
+margin-bottom: 2em ;
+
+.ElementoRodape{
+
+width: 33.3333333%;
+padding: 0 3em;
+font-family: var(--fontText);
+text-align: left;
+
+img{
+width: 50%;
+height: auto;
+}
+
+p{
+font-size: 1em;
+color: #999;
+}
+
+h3{
+font-size: 1.2em;
+color: #fff;
+}
+
+ul{
+
+margin: 0 -30px;
+
+li{
+font-size: 1em;
+color: #999;
+}
+
+}
+
+}
+
+}
+
+}
+
+p{
+font-size: 1em;
+color: #999;
+font-family: var(--fontText);  
+}
+
+}

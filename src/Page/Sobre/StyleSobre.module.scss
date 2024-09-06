@@ -1,0 +1,340 @@
+
+
+#Service{
+
+padding: 6em 0;
+width: 100%;
+
+#ConteinerService{
+
+padding: 0 40px;
+
+#BoxService{
+
+display: inline-flex;
+padding: 0 20px;
+
+.ElementService{
+
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+width: 33.333333%;
+padding: 0 20px;
+
+.BoxIcon{
+
+padding: 0 11em;
+margin: 0 -15px;
+
+svg{
+width: 100%;
+height: auto;
+fill: #9fc4ce;
+}
+
+}
+
+.BoxText{
+
+text-align: center;
+color: #000;
+font-family: var(--fontText);
+
+h3{}
+
+p{}
+
+}
+
+}
+
+}
+
+}
+
+}
+
+#TextSobre{
+
+width: 100%;
+padding: 3em 0;
+
+#ConteinerTextSobre{
+
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 0 40px;
+
+#BoxTextSobre{
+
+padding: 0 20px;
+width: 50%;
+
+.BoxText{
+
+display: block;
+text-align: center;
+line-height: 1.5;
+font-family: var(--fontText);
+color: #000;
+
+h3{
+font-size: 1em;
+color: #9fc4ce;
+margin-bottom: 1em;
+}
+
+h1{
+font-family: var(--fontTitle);
+font-weight: 400;
+font-size: 2.5em;
+margin-bottom: 1em;
+}
+
+P{
+font-size: 1em;
+}
+
+}
+
+}
+
+}
+
+}
+
+#SectionImg{
+
+padding: 3em 0;
+width: 100%;
+
+#ConteinerSectionImg{
+
+padding: 0 40px;
+
+#BoxSectionImg{
+
+display: flex;
+padding: 0 20px;
+
+.BoxImg{
+
+padding: 1em;
+
+img{
+width: 100%;
+height: auto;
+}
+
+}
+
+}
+
+}
+
+}
+
+#Info{
+
+padding: 3em 0;
+width: 100%;
+
+#ConteinerInfo{
+
+padding: 0 40px;
+
+#BoxInfo{
+
+display: flex;
+align-items: center;
+padding: 0 20px;
+
+
+.SectionTitle{
+
+width: 50%;
+
+.BoxText{
+
+text-align: left;
+margin: 0 -30px;
+font-family: var(--fontText);
+
+h3{
+font-size: 1em;
+color: #9fc4ce;
+}
+
+h1{
+font-size: 2.5em;
+font-family: var(--fontTitle);
+font-weight: 400;
+}
+
+}
+
+}
+
+.SectionText{
+
+width: 50%;
+
+.BoxText{
+
+color: #000;
+font-family: var(--fontText);
+line-height: 1.5;
+
+p{
+font-size: 1em;
+}
+
+}
+
+}
+
+}
+
+}
+
+}
+
+#Team{
+
+padding: 3em 0;
+width: 100%;
+
+#ConteinerTeam{
+
+padding: 0 40px;
+
+#BoxTeam{
+
+display: flex;
+padding: 0 20px;
+margin: 0 -30px;
+
+.ElementTeam{
+
+display: block;
+text-align: center;
+
+.BoxImg{
+
+padding: 1em;
+margin: 0 -10px;
+
+img{
+width: 100%;
+height: auto;
+}
+
+}
+
+.BoxText{
+
+font-family: var(--fontText);
+color: #000;
+line-height: 1.5;
+font-weight: normal;
+
+padding: 0 10px;
+
+h2{
+font-size: 2em;
+font-weight: 400;
+}
+
+h3{
+font-size: 1em;
+color: #9fc4ce;
+}
+
+p{
+font-size: 1em;
+}
+
+}
+
+}
+
+}
+
+}
+
+}
+
+#Sobre{
+
+padding: 6em 0;
+width: 100%;
+
+#ConteinerSobre{
+
+padding: 0 40px;
+
+#BoxSobre{
+
+display: flex;
+align-items: center;
+padding: 0 20px;
+
+
+.SectionImg{
+
+width: 50%;
+
+.BoxImg{
+
+padding: 1em;
+margin: 0 -45px;
+
+img{
+width: 100%;
+height: auto;
+}
+
+}
+
+}
+
+.SectionText{
+
+width: 50%;
+padding: 0 40px;
+
+.BoxText{
+
+font-family: var(--fontText);
+color: #000;
+padding: 0 20px;
+text-align: center;
+line-height: 1.5;
+
+h3{
+font-size: 1em;
+color: #9fc4ce;
+}
+
+h1{
+font-size: 2.5em;
+font-weight: 400;
+font-family: var(--fontTitle);
+}
+
+p{
+font-size: 1em;
+}
+
+}
+
+}
+
+}
+
+}
+
+}

@@ -1,0 +1,38 @@
+#Saudacao {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+#Saudacao::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+#Saudacao .ConteinerSaudacao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 40px;
+  height: 100%;
+}
+#Saudacao .ConteinerSaudacao .BoxSaudacao {
+  position: relative;
+  padding: 0 20px;
+  font-family: var(--fontText);
+  z-index: 4;
+  text-align: center;
+}
+#Saudacao .ConteinerSaudacao .BoxSaudacao h1 {
+  font-family: var(--fontTitle);
+  font-size: 2.5em;
+  color: #fff;
+}
+#Saudacao .ConteinerSaudacao .BoxSaudacao h3 {
+  font-size: 1rem;
+  color: #fff;
+}/*# sourceMappingURL=StyleSaudacao.module.css.map */

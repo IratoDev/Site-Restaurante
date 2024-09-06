@@ -1,0 +1,218 @@
+#Service {
+  padding: 6em 0;
+  width: 100%;
+}
+#Service #ConteinerService {
+  padding: 0 40px;
+}
+#Service #ConteinerService #BoxService {
+  display: inline-flex;
+  padding: 0 20px;
+}
+#Service #ConteinerService #BoxService .ElementService {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 33.333333%;
+  padding: 0 20px;
+}
+#Service #ConteinerService #BoxService .ElementService .BoxIcon {
+  padding: 0 11em;
+  margin: 0 -15px;
+}
+#Service #ConteinerService #BoxService .ElementService .BoxIcon svg {
+  width: 100%;
+  height: auto;
+  fill: #9fc4ce;
+}
+#Service #ConteinerService #BoxService .ElementService .BoxText {
+  text-align: center;
+  color: #000;
+  font-family: var(--fontText);
+}
+#TextSobre {
+  width: 100%;
+  padding: 3em 0;
+}
+#TextSobre #ConteinerTextSobre {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 40px;
+}
+#TextSobre #ConteinerTextSobre #BoxTextSobre {
+  padding: 0 20px;
+  width: 50%;
+}
+#TextSobre #ConteinerTextSobre #BoxTextSobre .BoxText {
+  display: block;
+  text-align: center;
+  line-height: 1.5;
+  font-family: var(--fontText);
+  color: #000;
+}
+#TextSobre #ConteinerTextSobre #BoxTextSobre .BoxText h3 {
+  font-size: 1em;
+  color: #9fc4ce;
+  margin-bottom: 1em;
+}
+#TextSobre #ConteinerTextSobre #BoxTextSobre .BoxText h1 {
+  font-family: var(--fontTitle);
+  font-weight: 400;
+  font-size: 2.5em;
+  margin-bottom: 1em;
+}
+#TextSobre #ConteinerTextSobre #BoxTextSobre .BoxText P {
+  font-size: 1em;
+}
+
+#SectionImg {
+  padding: 3em 0;
+  width: 100%;
+}
+#SectionImg #ConteinerSectionImg {
+  padding: 0 40px;
+}
+#SectionImg #ConteinerSectionImg #BoxSectionImg {
+  display: flex;
+  padding: 0 20px;
+}
+#SectionImg #ConteinerSectionImg #BoxSectionImg .BoxImg {
+  padding: 1em;
+}
+#SectionImg #ConteinerSectionImg #BoxSectionImg .BoxImg img {
+  width: 100%;
+  height: auto;
+}
+
+#Info {
+  padding: 3em 0;
+  width: 100%;
+}
+#Info #ConteinerInfo {
+  padding: 0 40px;
+}
+#Info #ConteinerInfo #BoxInfo {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+#Info #ConteinerInfo #BoxInfo .SectionTitle {
+  width: 50%;
+}
+#Info #ConteinerInfo #BoxInfo .SectionTitle .BoxText {
+  text-align: left;
+  margin: 0 -30px;
+  font-family: var(--fontText);
+}
+#Info #ConteinerInfo #BoxInfo .SectionTitle .BoxText h3 {
+  font-size: 1em;
+  color: #9fc4ce;
+}
+#Info #ConteinerInfo #BoxInfo .SectionTitle .BoxText h1 {
+  font-size: 2.5em;
+  font-family: var(--fontTitle);
+  font-weight: 400;
+}
+#Info #ConteinerInfo #BoxInfo .SectionText {
+  width: 50%;
+}
+#Info #ConteinerInfo #BoxInfo .SectionText .BoxText {
+  color: #000;
+  font-family: var(--fontText);
+  line-height: 1.5;
+}
+#Info #ConteinerInfo #BoxInfo .SectionText .BoxText p {
+  font-size: 1em;
+}
+
+#Team {
+  padding: 3em 0;
+  width: 100%;
+}
+#Team #ConteinerTeam {
+  padding: 0 40px;
+}
+#Team #ConteinerTeam #BoxTeam {
+  display: flex;
+  padding: 0 20px;
+  margin: 0 -30px;
+}
+#Team #ConteinerTeam #BoxTeam .ElementTeam {
+  display: block;
+  text-align: center;
+}
+#Team #ConteinerTeam #BoxTeam .ElementTeam .BoxImg {
+  padding: 1em;
+  margin: 0 -10px;
+}
+#Team #ConteinerTeam #BoxTeam .ElementTeam .BoxImg img {
+  width: 100%;
+  height: auto;
+}
+#Team #ConteinerTeam #BoxTeam .ElementTeam .BoxText {
+  font-family: var(--fontText);
+  color: #000;
+  line-height: 1.5;
+  font-weight: normal;
+  padding: 0 10px;
+}
+#Team #ConteinerTeam #BoxTeam .ElementTeam .BoxText h2 {
+  font-size: 2em;
+  font-weight: 400;
+}
+#Team #ConteinerTeam #BoxTeam .ElementTeam .BoxText h3 {
+  font-size: 1em;
+  color: #9fc4ce;
+}
+#Team #ConteinerTeam #BoxTeam .ElementTeam .BoxText p {
+  font-size: 1em;
+}
+
+#Sobre {
+  padding: 6em 0;
+  width: 100%;
+}
+#Sobre #ConteinerSobre {
+  padding: 0 40px;
+}
+#Sobre #ConteinerSobre #BoxSobre {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+#Sobre #ConteinerSobre #BoxSobre .SectionImg {
+  width: 50%;
+}
+#Sobre #ConteinerSobre #BoxSobre .SectionImg .BoxImg {
+  padding: 1em;
+  margin: 0 -45px;
+}
+#Sobre #ConteinerSobre #BoxSobre .SectionImg .BoxImg img {
+  width: 100%;
+  height: auto;
+}
+#Sobre #ConteinerSobre #BoxSobre .SectionText {
+  width: 50%;
+  padding: 0 40px;
+}
+#Sobre #ConteinerSobre #BoxSobre .SectionText .BoxText {
+  font-family: var(--fontText);
+  color: #000;
+  padding: 0 20px;
+  text-align: center;
+  line-height: 1.5;
+}
+#Sobre #ConteinerSobre #BoxSobre .SectionText .BoxText h3 {
+  font-size: 1em;
+  color: #9fc4ce;
+}
+#Sobre #ConteinerSobre #BoxSobre .SectionText .BoxText h1 {
+  font-size: 2.5em;
+  font-weight: 400;
+  font-family: var(--fontTitle);
+}
+#Sobre #ConteinerSobre #BoxSobre .SectionText .BoxText p {
+  font-size: 1em;
+}/*# sourceMappingURL=StyleSobre.module.css.map */
