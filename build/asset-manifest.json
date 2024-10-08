@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/static/css/main.90c0ab75.css",
+    "main.js": "/static/js/main.fdc5e337.js",
+    "static/media/parallax-bkg1.jpg": "/static/media/parallax-bkg1.f6abc7c43552a97c0838.jpg",
+    "static/media/contact-us.jpg": "/static/media/contact-us.dfbf1bc4a9f46d12303f.jpg",
+    "static/media/parallax-2.jpg": "/static/media/parallax-2.981a49e48859bc91542c.jpg",
+    "static/media/home12-img1.jpg": "/static/media/home12-img1.9f8e92f1b42245108d8d.jpg",
+    "static/media/blog-img.jpg": "/static/media/blog-img.3b5399018ba95149ce6f.jpg",
+    "static/media/About-us-title-img.jpg": "/static/media/About-us-title-img.6391136ea4d6b082d5a6.jpg",
+    "static/media/slider-2.jpg": "/static/media/slider-2.a60c7746af8589deb6c5.jpg",
+    "static/media/menu-img.jpg": "/static/media/menu-img.403e00a272e3f2481fd5.jpg",
+    "static/media/slider-3.jpg": "/static/media/slider-3.150b3579ab650194662f.jpg",
+    "static/media/parrallax-3.jpg": "/static/media/parrallax-3.258ed151d24d611894b5.jpg",
+    "static/media/home7.jpg": "/static/media/home7.b48e50bca84a1196e90c.jpg",
+    "static/media/home-5.jpg": "/static/media/home-5.98e6369aa61bd7541f2b.jpg",
+    "static/media/home-team-2.jpg": "/static/media/home-team-2.a8b6ff68b95b140156e0.jpg",
+    "static/media/home-team-1.jpg": "/static/media/home-team-1.602e7ebc73120d1fc363.jpg",
+    "static/media/chef-1.jpg": "/static/media/chef-1.7a98f980e2621b2fb4cb.jpg",
+    "static/media/welcome-1.jpg": "/static/media/welcome-1.3223e845d7c1cb619d22.jpg",
+    "static/media/welcome-2.jpg": "/static/media/welcome-2.58405973ce442caac4f7.jpg",
+    "static/media/team-2.jpg": "/static/media/team-2.d041bab0502d5b63143f.jpg",
+    "static/media/team-4.jpg": "/static/media/team-4.0ecc5926874591ee0d6f.jpg",
+    "index.html": "/index.html",
+    "main.90c0ab75.css.map": "/static/css/main.90c0ab75.css.map",
+    "main.fdc5e337.js.map": "/static/js/main.fdc5e337.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.90c0ab75.css",
+    "static/js/main.fdc5e337.js"
+  ]
+}
