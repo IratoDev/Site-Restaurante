@@ -7,8 +7,6 @@ align-items: center;
 justify-content: center;
 position: fixed;
 top: 0;
-left: 0;
-right: 0;
 z-index: 10;
 
 padding: 26px 0;
@@ -22,7 +20,6 @@ padding: 0 30px;
 
 .ConteinerLogo{
 
-flex: 1 1 0;
 padding: 0 20px;
 
 .BoxLogo{
@@ -31,8 +28,7 @@ padding: 0 10px;
 
 
 img{
-max-width: 120px;
-width: 100%;
+width: 120px;
 height: auto;
 }
 
@@ -42,7 +38,7 @@ height: auto;
 
 .ConteinerNav{
 
-padding: 0 40px;
+padding: 0 20px;
 
 .BoxNav{
 
@@ -53,6 +49,7 @@ ul{
 
 color: #fff;
 font-family: var(--fontText);
+text-wrap: nowrap;
 
 li{
 
@@ -78,7 +75,7 @@ position: relative;
 margin-left: 24px;
 font-size: 1em;
 font-weight: 500;
-letter-spacing: .15em;
+letter-spacing: 0.15em;
 color: #fff;
 text-transform: uppercase;
 cursor: pointer;
@@ -88,6 +85,144 @@ cursor: pointer;
 
 }
 
+}
+
+}
+
+}
+
+.ConteinerMobile{
+
+display: flex;
+flex-direction: row-reverse;
+justify-content: center;
+align-items: center;
+padding: auto 40px;
+
+
+.ConteinerLogo{
+
+width: 40%;
+height: 100%;
+
+.BoxLogo{
+
+padding: 0 10px;
+
+img{
+width: 100%;
+height: auto;
+}
+
+}
+
+}
+
+.ConteinerNav{
+
+padding: 0 10px;
+position: absolute;
+left: 0;
+
+.BoxNav{
+
+padding: 0 10px;
+
+button{
+
+background: none;
+border: none;
+
+i{
+font-size: 3em;
+color: #fff;
+}
+
+}
+
+}
+
+}
+
+}
+
+}
+
+#MenuMobile{
+
+display: flex;
+align-items: center;
+position: fixed;
+left: 0;
+z-index: 200;
+background-color: #252525;
+transition: all 500ms ease-in-out;
+width: 60%;
+height: 100%;
+
+#conteinerMenuMobile{
+
+display:flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-between;
+padding: 0 20px;
+
+width: 80%;
+height: 80vh;
+
+.BoxButton{
+
+padding: 0 20px;
+
+button{
+padding: 1em;
+border: none;
+background: none;
+color: #FFF;
+
+i{
+
+font-size: 2em;
+}
+
+}
+
+}
+
+nav{
+
+display: flex;
+flex-direction: column;
+align-items: center;
+
+.ButtonNavBar{
+
+font-size: 16px;
+color: #FFF;
+font-weight: 400;
+line-height: 80px;
+font-family: var(--fontText);
+
+padding: 0 0.5em;
+text-decoration: none;
+text-transform: uppercase;
+
+}
+
+
+}
+
+#BoxIcon{
+
+display: flex;
+font-size: 1.5em;
+color: #FFF;
+
+padding: 0 20px;
+
+i{
+padding: 0 10px;
 }
 
 }

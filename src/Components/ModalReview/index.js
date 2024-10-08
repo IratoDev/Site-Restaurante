@@ -1,6 +1,7 @@
 
 import { useState, useEffect, useRef } from "react";
-import StyleReview from "./StyleReview.module.css"
+import StyleReview from "./StyleReview.module.css";
+import { ObservedElement } from "../../Mycontext/Context";
 
 export function ModalReview(){
 
@@ -46,6 +47,10 @@ return(
 
 <>
 
+<head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"/>
+</head>
+
 <div className={StyleReview.ConteinerReview}>
 
     <div id={StyleReview.ConteinerText}>
@@ -53,7 +58,7 @@ return(
         <div className={StyleReview.boxText}>
 
             <h3>- Testemunhos -</h3>
-            <h1>O que nossos clientes dizem</h1>
+            <h1>O que nossos <br/> clientes dizem</h1>
 
         </div>
 
@@ -92,7 +97,6 @@ return(
             </div>
 
         </div>
-
     </div>
 
 <button className={StyleReview.BtnCarrosel} onClick={BtnLeft} style={{left:"0"}}>

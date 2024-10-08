@@ -9,14 +9,19 @@ import imgEquipe1 from "../../assets/imagem/home-team-1.jpg";
 import imgEquipe2 from "../../assets/imagem/home-team-2.jpg";
 
 import { NavBar } from "../../Components/Navbar";
+import { MenuMobile } from "../../Components/Navbar";
 import { Rodape } from "../../Components/SectionRodape";
 import { ModalCardapio } from "../../Components/ModalMenu";
 import { ModalReview } from "../../Components/ModalReview";
+import { ObservedElement, useMyContext } from "../../Mycontext/Context";
 
 export default function HomePage(){
 
 const[CurrentItem, setCurrentItem] = useState(0);
 const ConteinerSlide = useRef();
+
+
+const { isVisible } = useMyContext();
 
 useEffect(()=>{
 
@@ -69,17 +74,18 @@ return(
 <>
 
 <head>
-
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"></link>
-    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"/>
 </head>
 
 <NavBar/>
+
+<MenuMobile/>
 
 <main>
 
 <section id={StyleHomePage.Home}> 
 
+<ObservedElement id="element1">
 <div className={StyleHomePage.ConteinerHome}>
 
     <div id={StyleHomePage.ConteinerText}>
@@ -97,9 +103,9 @@ return(
 
     <div id={StyleHomePage.conteinerCarrosel} ref={ConteinerSlide}>
 
-        <div className={StyleHomePage.Slides}>Slide1</div>
-        <div className={StyleHomePage.Slides}>Slide2</div>
-        <div className={StyleHomePage.Slides}>Slide3</div>
+        <div className={StyleHomePage.Slides}></div>
+        <div className={StyleHomePage.Slides}></div>
+        <div className={StyleHomePage.Slides}></div>
 
     </div>
 
@@ -112,16 +118,20 @@ return(
 </button>
 
 </div>
+</ObservedElement>
 
 </section>
 
 <section id={StyleHomePage.Saudacao}>
 
+<ObservedElement id="element2">
 <div id={StyleHomePage.ConteinerSaudacao}>
 
     <div className={StyleHomePage.BoxSaudacao}>
 
+        <div className={StyleHomePage.BoxImagen}>
         <img src={imgSaudacao1} alt="img-Saudacao-1"/>
+        </div>
 
         <div className={StyleHomePage.ConteinerTexSaudacao}>
 
@@ -138,12 +148,14 @@ return(
 
         </div>
 
-
+        <div className={StyleHomePage.BoxImagen}>
         <img src={imgSaudacao2} alt="img-Saudacao-1"/>
+        </div>
 
     </div>
 
 </div>
+</ObservedElement>
 
 </section>
 
@@ -151,12 +163,14 @@ return(
 
 <div className={StyleHomePage.conteinerBanner}>
 
+<ObservedElement id="element3">
     <div className={StyleHomePage.BoxBanner}>
 
     <h3>- Venha e veja -</h3>
     <h1>Nós criamos experiências deliciosas</h1>
 
     </div>
+</ObservedElement>
 
 </div>
 
@@ -168,12 +182,14 @@ return(
 
 <div className={StyleHomePage.conteinerBanner}>
 
+<ObservedElement id="element4">
     <div className={StyleHomePage.BoxBanner}>
 
     <h3>- Reservas agora -</h3>
     <h1>Jantares Privados e Happy Hours</h1>
 
     </div>
+</ObservedElement>
 
 </div>
 
@@ -181,6 +197,7 @@ return(
 
 <section id={StyleHomePage.Equipe}>
 
+<ObservedElement id="element5">
 <div id={StyleHomePage.ConteinerEquipe}>
 
     <div className={StyleHomePage.BoxEquipe}>
@@ -211,6 +228,7 @@ return(
     </div>
 
 </div>
+</ObservedElement>
 
 </section>
 
@@ -218,6 +236,7 @@ return(
 
 <section id={StyleHomePage.Reservas}>
 
+<ObservedElement id="element6">
 <div id={StyleHomePage.ConteinerReservas}>
 
     <div id={StyleHomePage.BoxReservas}>
@@ -227,7 +246,7 @@ return(
             <div className={StyleHomePage.BoxText}>
 
             <h3>- Contato -</h3>
-            <h1>Faça uma reserva</h1>
+            <h1>Faça uma Reserva</h1>
 
             </div>
 
@@ -260,9 +279,17 @@ return(
 
                 <form>
 
+                <table>
                 <input placeholder="Nome" type="text" name="Name" />
+                </table>
+
+                <table>
                 <input placeholder="E-mail" type="text" name="Email" />
+                </table>
+                
+                <table>
                 <input placeholder="Telefone" type="text" name="Telefone" />
+                </table>
 
                 <textarea cols="40" rows="5" maxlength="2000" placeholder="Sua mensagem" name="sua-mensagem"/>
 
@@ -277,6 +304,7 @@ return(
     </div>
 
 </div>
+</ObservedElement>
 
 </section>
 

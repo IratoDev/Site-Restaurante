@@ -14,19 +14,94 @@ padding: 0 40px;
 .BoxRodape{
 
 display: flex;
-margin: 0 -35px;
 margin-bottom: 2em ;
 
 .ElementoRodape{
 
 width: 33.3333333%;
-padding: 0 3em;
 font-family: var(--fontText);
 text-align: left;
 
 img{
 width: 50%;
+max-width: 200px;
 height: auto;
+}
+
+p{
+font-size: 0.9em;
+color: #999;
+}
+
+h3{
+font-size: 1.2em;
+color: #fff;
+}
+
+ul{
+
+li{
+font-size: 0.9em;
+color: #999;
+}
+
+}
+
+}
+
+}
+
+}
+
+p{
+font-size: 1em;
+color: #999;
+font-family: var(--fontText);  
+}
+
+}
+
+@media screen and (max-width: 770px){
+
+footer{
+
+padding: 6em 0;
+
+.ConteinerRodape{
+
+display: flex;
+flex-direction: column;
+align-items: center;
+
+.BoxRodape{
+
+display: flex;
+align-items: center;
+flex-direction: column;
+
+gap: 2.5em;
+
+.ElementoRodape{
+
+width:100%;
+font-family: var(--fontText);
+text-align: left;
+text-align: center;
+
+.BoxElemento{
+
+padding: 0 20px;
+
+.BoxImg{
+
+padding: 0 40px;
+
+img{
+width: 100%;
+height: auto;
+margin-bottom: 1em;
+}
+
 }
 
 p{
@@ -37,6 +112,7 @@ color: #999;
 h3{
 font-size: 1.2em;
 color: #fff;
+margin-bottom: 0.5em;
 }
 
 ul{
@@ -56,10 +132,13 @@ color: #999;
 
 }
 
+}
+
 p{
 font-size: 1em;
 color: #999;
 font-family: var(--fontText);  
+}
 }
 
 }

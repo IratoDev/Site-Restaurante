@@ -1,5 +1,4 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 *{
@@ -13,7 +12,16 @@ list-style: none;
 
 :root{
 
---fontTitle:"Work";
---fontText:"Lora";
+--fontTitle:"Lora,serif";
+--fontText:"Work Sans";
 
+}
+
+.element {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.element.visible {
+  opacity: 1;
 }

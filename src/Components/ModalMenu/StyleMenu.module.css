@@ -1,28 +1,26 @@
 .ModalBebidas {
   padding-top: 6em;
   padding-bottom: 6em;
-  border: 3em solid #fff;
   border-bottom: none;
+  border: 3em solid #fff;
 }
 .ModalBebidas .ConteinerModal {
   width: 100%;
   max-width: none;
 }
 .ModalBebidas .ConteinerModal .ConteinerCardapio {
-  padding-left: 30px;
-  padding-right: 30px;
+  padding: 0 30px;
 }
 .ModalBebidas .ConteinerModal .ConteinerCardapio .ConteinerTitle {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 0 -20px;
-  padding: 0 20px;
   width: 100%;
+  margin-bottom: 3em;
 }
 .ModalBebidas .ConteinerModal .ConteinerCardapio .ConteinerTitle .BoxTitle {
-  font-family: var(--fontTitle);
+  font-family: var(--fontText);
   text-align: center;
   width: 50%;
   color: #000;
@@ -30,40 +28,47 @@
 }
 .ModalBebidas .ConteinerModal .ConteinerCardapio .ConteinerTitle .BoxTitle h3 {
   color: #9fc4ce;
-  font-style: normal !important;
-  margin-bottom: 0.4em;
-  font-size: 1.5em;
+  margin-bottom: 0.5em;
+  font-size: 1em;
+  font-weight: 500;
+  text-transform: uppercase;
 }
 .ModalBebidas .ConteinerModal .ConteinerCardapio .ConteinerTitle .BoxTitle h1 {
   font-size: 3em;
   padding-bottom: 0.1em;
-}
-.ModalBebidas .ConteinerModal .ConteinerCardapio .ConteinerTitle .BoxTitle p {
-  font-size: 1.1em;
+  font-family: var(--fontTitle);
+  font-weight: 500;
   margin-bottom: 0.5em;
 }
+.ModalBebidas .ConteinerModal .ConteinerCardapio .ConteinerTitle .BoxTitle p {
+  font-size: 1em;
+  margin-bottom: 0.5em;
+  line-height: 1.5;
+}
 .ModalBebidas .ConteinerModal .ConteinerCardapio #NavBarBebidas {
-  display: flex;
-  justify-content: center;
-  gap: 2em;
-  align-items: center;
-  width: 100%;
+  padding: 0 40px;
   font-family: var(--fontText);
 }
-.ModalBebidas .ConteinerModal .ConteinerCardapio #NavBarBebidas span {
+.ModalBebidas .ConteinerModal .ConteinerCardapio #NavBarBebidas .BoxNav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+}
+.ModalBebidas .ConteinerModal .ConteinerCardapio #NavBarBebidas .BoxNav span {
   display: block;
   padding: 1em 2em 1em;
   font-size: 1.1em;
   line-height: 1;
   cursor: pointer;
 }
-.ModalBebidas .ConteinerModal .ConteinerCardapio #NavBarBebidas span.focused {
+.ModalBebidas .ConteinerModal .ConteinerCardapio #NavBarBebidas .BoxNav span.focused {
   color: #9fc4ce;
 }
 .ModalBebidas .ConteinerModal .ConteinerCardapio .ConteirProdutos {
   display: flex;
-  margin: 0 -20px;
   position: relative;
+  margin: 0 -20px;
   overflow: hidden;
 }
 .ModalBebidas .ConteinerModal .ConteinerCardapio .ConteirProdutos #conteinerSlides {
@@ -77,49 +82,124 @@
 }
 .ModalBebidas .ConteinerModal .ConteinerCardapio .ConteirProdutos #conteinerSlides .Slides .ColunProduto {
   width: 100%;
-  padding: 0 20px;
   padding-top: 3em;
 }
-.ModalBebidas .ConteinerModal .ConteinerCardapio .ConteirProdutos #conteinerSlides .Slides .ColunProduto .Produto {
+.ModalBebidas .ConteinerModal .ConteinerCardapio .ConteirProdutos #conteinerSlides .Slides .ColunProduto .BoxProduto {
+  padding: 0 10px;
+}
+.ModalBebidas .ConteinerModal .ConteinerCardapio .ConteirProdutos #conteinerSlides .Slides .ColunProduto .BoxProduto .Produto {
   display: flex;
   align-items: center;
   text-align: left;
-  padding-top: 1em;
-  padding-bottom: 1em;
+  padding: 1em 20px;
 }
-.ModalBebidas .ConteinerModal .ConteinerCardapio .ConteirProdutos #conteinerSlides .Slides .ColunProduto .Produto .BoxImg {
-  flex: 0 0 80px;
-  line-height: 0;
-  border-radius: 50%;
-  overflow: hidden;
-}
-.ModalBebidas .ConteinerModal .ConteinerCardapio .ConteirProdutos #conteinerSlides .Slides .ColunProduto .Produto .BoxImg img {
-  width: auto;
-  max-width: 100%;
-  height: auto;
-}
-.ModalBebidas .ConteinerModal .ConteinerCardapio .ConteirProdutos #conteinerSlides .Slides .ColunProduto .Produto .BoxText {
-  margin: 0 1em;
+.ModalBebidas .ConteinerModal .ConteinerCardapio .ConteirProdutos #conteinerSlides .Slides .ColunProduto .BoxProduto .Produto .BoxText {
   color: #262626;
-  font-family: var(--fontTitle);
+  font-family: var(--fontText);
   line-height: 1.3;
+  margin: 0 -15px;
+  padding: 0 20px;
 }
-.ModalBebidas .ConteinerModal .ConteinerCardapio .ConteirProdutos #conteinerSlides .Slides .ColunProduto .Produto .BoxText h4 {
-  clear: both;
-  padding: 0 0 0.4em;
+.ModalBebidas .ConteinerModal .ConteinerCardapio .ConteirProdutos #conteinerSlides .Slides .ColunProduto .BoxProduto .Produto .BoxText h4 {
   font-weight: 800;
+  font-family: var(--fontTitle);
   font-style: normal;
   font-size: 1.05em;
   padding-bottom: 0.2em;
 }
-.ModalBebidas .ConteinerModal .ConteinerCardapio .ConteirProdutos #conteinerSlides .Slides .ColunProduto .Produto .BoxText p {
+.ModalBebidas .ConteinerModal .ConteinerCardapio .ConteirProdutos #conteinerSlides .Slides .ColunProduto .BoxProduto .Produto .BoxText p {
   font-size: 0.9em;
   opacity: 0.7;
   line-height: 1.5;
 }
-.ModalBebidas .ConteinerModal .ConteinerCardapio .ConteirProdutos #conteinerSlides .Slides .ColunProduto .Produto .BoxPreco span {
-  font-family: var(--fontTitle);
+.ModalBebidas .ConteinerModal .ConteinerCardapio .ConteirProdutos #conteinerSlides .Slides .ColunProduto .BoxProduto .Produto .BoxText span {
   font-size: 1.1em;
   font-weight: 400;
   white-space: nowrap;
+}
+
+@media screen and (max-width: 770px) {
+  .ModalBebidas {
+    border: 1em solid #fff;
+  }
+  .ModalBebidas .ConteinerModal .ConteinerCardapio {
+    padding: 10px;
+  }
+  .ModalBebidas .ConteinerModal .ConteinerCardapio .ConteinerTitle {
+    width: 100%;
+  }
+  .ModalBebidas .ConteinerModal .ConteinerCardapio .ConteinerTitle .BoxTitle {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .ModalBebidas .ConteinerModal .ConteinerCardapio .ConteinerTitle .BoxTitle h3 {
+    color: #9fc4ce;
+    margin-bottom: 0.5em;
+    font-size: 1em;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  .ModalBebidas .ConteinerModal .ConteinerCardapio .ConteinerTitle .BoxTitle h1 {
+    font-size: 3em;
+    padding-bottom: 0.1em;
+    font-family: var(--fontTitle);
+    font-weight: 500;
+    margin-bottom: 0.5em;
+  }
+  .ModalBebidas .ConteinerModal .ConteinerCardapio .ConteinerTitle .BoxTitle p {
+    font-size: 1em;
+    margin-bottom: 0.5em;
+    line-height: 1.5;
+  }
+  .ModalBebidas .ConteinerModal .ConteinerCardapio #NavBarBebidas {
+    padding: 0 20px;
+    font-family: var(--fontText);
+  }
+  .ModalBebidas .ConteinerModal .ConteinerCardapio #NavBarBebidas .BoxNav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 10px;
+  }
+  .ModalBebidas .ConteinerModal .ConteinerCardapio #NavBarBebidas .BoxNav span {
+    display: block;
+    padding: 1em 0.5em 1em;
+    font-size: 1.1em;
+    line-height: 1;
+    cursor: pointer;
+  }
+  .ModalBebidas .ConteinerModal .ConteinerCardapio #NavBarBebidas .BoxNav span.focused {
+    color: #9fc4ce;
+  }
+  .ModalBebidas .ConteinerModal .ConteinerCardapio .ConteirProdutos {
+    display: flex;
+    position: relative;
+    margin: 0 -20px;
+    overflow: hidden;
+  }
+  .ModalBebidas .ConteinerModal .ConteinerCardapio .ConteirProdutos #conteinerSlides {
+    display: flex;
+    min-width: 100%;
+    transition: transform 0.5s ease-in-out;
+  }
+  .ModalBebidas .ConteinerModal .ConteinerCardapio .ConteirProdutos #conteinerSlides .Slides {
+    align-items: center;
+    flex-direction: column;
+  }
+  .ModalBebidas .ConteinerModal .ConteinerCardapio .ConteirProdutos #conteinerSlides .Slides .ColunProduto {
+    width: 80%;
+  }
+  .ModalBebidas .ConteinerModal .ConteinerCardapio .ConteirProdutos #conteinerSlides .Slides .ColunProduto .BoxProduto {
+    margin: 0 -25px;
+  }
+  .ModalBebidas .ConteinerModal .ConteinerCardapio .ConteirProdutos #conteinerSlides .Slides .ColunProduto .BoxProduto .Produto {
+    display: flex;
+    flex-direction: column;
+    padding: 1em 10px;
+    text-align: left;
+  }
+  .ModalBebidas .ConteinerModal .ConteinerCardapio .ConteirProdutos #conteinerSlides .Slides .ColunProduto .BoxProduto .Produto .BoxText {
+    margin: 0 -25px;
+  }
 }/*# sourceMappingURL=StyleMenu.module.css.map */

@@ -3,7 +3,9 @@ import StyleContato from "./StyleContato.module.css";
 
 import { SectionSaudacao } from "../../Components/SectionSaudacao";
 import { NavBar } from "../../Components/Navbar";
+import { MenuMobile } from "../../Components/Navbar";
 import { Rodape } from "../../Components/SectionRodape";
+import { ObservedElement, useMyContext } from "../../Mycontext/Context";
 
 import imgameFundo from "../../assets/imagem/contact-us.jpg";
 
@@ -12,57 +14,78 @@ export default function ContatoPage(){
 return(
 
 <>
+
+<head>
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.3/font/bootstrap-icons.min.css" rel="stylesheet"/>
+
+</head>
+
 <NavBar/>
+
+<MenuMobile/>
 
 <SectionSaudacao Title="Contato" Text="É fácil entrar em contato conosco" Imagem={imgameFundo} />
 
 <section id={StyleContato.InfoContato}>
 
+<ObservedElement id="element15">
 <div id={StyleContato.ConteinerInfo} >
 
     <div id={StyleContato.BoxInfo}>
 
         <div className={StyleContato.ElementInfo}>
 
-            <span className={StyleContato.BoxImg}>
+            <span className={StyleContato.BoxIcon}>
             <i class="bi bi-map-fill"></i>
             </span>
-            <h3>40 Park Ave, Brooklyn,
-            </h3>
+
+            <div className={StyleContato.BoxText}>
+            <h3>Localização</h3>
+            <p>40 Park Ave, Brooklyn,</p>
             <p>New York, New York 1111</p>
+            </div>
 
         </div>
 
         <div className={StyleContato.ElementInfo}>
 
-            <span className={StyleContato.BoxImg}>
-            <i class="bi bi-map-fill"></i>
+            <span className={StyleContato.BoxIcon}>
+            <i class="bi bi-telephone-fill"></i>
             </span>
-            <h3>40 Park Ave, Brooklyn,
-            </h3>
-            <p>New York, New York 1111</p>
+
+            <div className={StyleContato.BoxText}>
+            <h3>Contato</h3>
+            <p>N+1 800 000 111</p>
+            <p>contact@example.com</p>
+            </div>
 
         </div>
 
         <div className={StyleContato.ElementInfo}>
 
-            <span className={StyleContato.BoxImg}>
-            <i class="bi bi-map-fill"></i>
+            <span className={StyleContato.BoxIcon}>
+            <i class="bi bi-bell-fill"></i>
             </span>
-            <h3>40 Park Ave, Brooklyn,
-            </h3>
-            <p>New York, New York 1111</p>
+
+            <div className={StyleContato.BoxText}>
+            <h3>Horário de funcionamento</h3>
+            <p>Almoço: 12h – 14h</p>
+            <p>Jantar: 18h – 22h</p>
+            </div>
 
         </div>
 
     </div>
 
 </div>
+</ObservedElement>
 
 </section>
 
 <section id={StyleContato.Mensagem}>
 
+<ObservedElement id="element16">
 <div id={StyleContato.ConteinerMensagem}>
 
     <div id={StyleContato.BoxMensagem}>
@@ -77,7 +100,7 @@ return(
                     <input type="text" name="E-mail" placeholder="E-mail"/>
                     <input type="text" name="Nome" placeholder="Nome"/>
 
-                    <textarea name="sua-mensagem" placeholder="Sua mensagem"/>
+                    <textarea cols="40" rows="4" maxlength="2000" name="sua-mensagem" placeholder="Sua mensagem"/>
 
                     <button>Enviar</button>
 
@@ -87,7 +110,7 @@ return(
 
         </div>
         
-        <div className={StyleContato.Endereco}>
+        <div className={StyleContato.SectionEndereco}>
 
             <div className={StyleContato.BoxEndereco}>
 
@@ -101,6 +124,7 @@ return(
     </div>
 
 </div>
+</ObservedElement>
 
 </section>
 

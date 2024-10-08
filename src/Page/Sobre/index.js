@@ -3,7 +3,9 @@ import StyleSobre from "./StyleSobre.module.css"
 
 import { SectionSaudacao } from "../../Components/SectionSaudacao";
 import { NavBar } from "../../Components/Navbar";
+import { MenuMobile } from "../../Components/Navbar";
 import { Rodape } from "../../Components/SectionRodape";
+import { ObservedElement, useMyContext } from "../../Mycontext/Context";
 
 import imgameFundo from "../../assets/imagem/blog-img.jpg";
 import img1 from "../../assets/imagem/home7.jpg";
@@ -24,12 +26,16 @@ return(
 
 <>
 <NavBar/>
+<MenuMobile/>
 
+<ObservedElement id="element8">
 <SectionSaudacao Title="Sobre mim
 " Text="Profissionais Experientes" Imagem={imgameFundo} />
+</ObservedElement>
 
 <section id={StyleSobre.Service}>
 
+<ObservedElement id="element9">
 <div id={StyleSobre.ConteinerService}>
 
     <div id={StyleSobre.BoxService}>
@@ -76,11 +82,13 @@ return(
     </div>
 
 </div>
+</ObservedElement>
 
 </section>
 
 <section id={StyleSobre.TextSobre}>
 
+<ObservedElement id="element10">
 <div id={StyleSobre.ConteinerTextSobre}>
 
     <div id={StyleSobre.BoxTextSobre}>
@@ -96,11 +104,13 @@ return(
     </div>
 
 </div>
+</ObservedElement>
 
 </section>
 
 <section id={StyleSobre.SectionImg}>
 
+<ObservedElement id="element11">
 <div id={StyleSobre.ConteinerSectionImg}>
 
     <div id={StyleSobre.BoxSectionImg}>
@@ -116,11 +126,13 @@ return(
     </div>
 
 </div>
+</ObservedElement>
 
 </section>
 
 <section id={StyleSobre.Info}>
 
+<ObservedElement id="element12">
 <div id={StyleSobre.ConteinerInfo}>
 
     <div id={StyleSobre.BoxInfo}>
@@ -153,11 +165,13 @@ return(
     </div>
 
 </div>
+</ObservedElement>
 
 </section>
 
 <section id={StyleSobre.Team}>
 
+<ObservedElement id="element13">
 <div id={StyleSobre.ConteinerTeam}>
 
     <div id={StyleSobre.BoxTeam}>
@@ -165,12 +179,12 @@ return(
         <div className={StyleSobre.ElementTeam}>
 
             <div className={StyleSobre.BoxImg}>
-                <img src={Team1} alt="Chef1"/>
+                <img src={Team1} alt="team1"/>
             </div>
 
             <div className={StyleSobre.BoxText}>
             <h2>Ana Smith</h2>
-            <h3>Chefe de cozinha</h3>
+            <h3>- Chefe -</h3>
 
             <p>Vou abrir tudo. E com justo ódio lideramos aqueles que são abrandados pela lisonja dos prazeres presentes e Nem há ninguém que persiga a própria dor porque ela é dor.
             </p>
@@ -181,12 +195,12 @@ return(
         <div className={StyleSobre.ElementTeam}>
 
             <div className={StyleSobre.BoxImg}>
-                <img src={Team2} alt="Chef1"/>
+                <img src={Team2} alt="team2"/>
             </div>
 
             <div className={StyleSobre.BoxText}>
-            <h2>Ana Smith</h2>
-            <h3>Chefe de cozinha</h3>
+            <h2>Michel Carter</h2>
+            <h3>- Gerente -</h3>
 
             <p>Vou abrir tudo. E com justo ódio lideramos aqueles que são abrandados pela lisonja dos prazeres presentes e Nem há ninguém que persiga a própria dor porque ela é dor.
             </p>
@@ -197,12 +211,12 @@ return(
         <div className={StyleSobre.ElementTeam}>
 
             <div className={StyleSobre.BoxImg}>
-                <img src={Team3} alt="Chef1"/>
+                <img src={Team3} alt="team3"/>
             </div>
 
             <div className={StyleSobre.BoxText}>
-            <h2>Ana Smith</h2>
-            <h3>Chefe de cozinha</h3>
+            <h2>Sara Burton</h2>
+            <h3>- Financiar -</h3>
 
             <p>Vou abrir tudo. E com justo ódio lideramos aqueles que são abrandados pela lisonja dos prazeres presentes e Nem há ninguém que persiga a própria dor porque ela é dor.
             </p>
@@ -213,12 +227,12 @@ return(
         <div className={StyleSobre.ElementTeam}>
 
             <div className={StyleSobre.BoxImg}>
-                <img src={Team4} alt="Chef1"/>
+                <img src={Team4} alt="team4"/>
             </div>
 
             <div className={StyleSobre.BoxText}>
-            <h2>Ana Smith</h2>
-            <h3>Chefe de cozinha</h3>
+            <h2>Tyler Hart</h2>
+            <h3>- Marketing -</h3>
 
             <p>Vou abrir tudo. E com justo ódio lideramos aqueles que são abrandados pela lisonja dos prazeres presentes e Nem há ninguém que persiga a própria dor porque ela é dor.
             </p>
@@ -229,11 +243,13 @@ return(
     </div>
 
 </div>
+</ObservedElement>
 
 </section>
 
 <section id={StyleSobre.Sobre}>
 
+<ObservedElement id="element14">
 <div id={StyleSobre.ConteinerSobre}>
 
     <div id={StyleSobre.BoxSobre}>
@@ -264,6 +280,7 @@ return(
     </div>
 
 </div>
+</ObservedElement>
 
 </section>
 

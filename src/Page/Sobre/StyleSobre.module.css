@@ -15,22 +15,32 @@
   align-items: center;
   justify-content: center;
   width: 33.333333%;
-  padding: 0 20px;
+  line-height: 2.5em;
 }
 #Service #ConteinerService #BoxService .ElementService .BoxIcon {
-  padding: 0 11em;
-  margin: 0 -15px;
+  text-align: center;
 }
 #Service #ConteinerService #BoxService .ElementService .BoxIcon svg {
-  width: 100%;
+  width: 4em;
   height: auto;
   fill: #9fc4ce;
 }
 #Service #ConteinerService #BoxService .ElementService .BoxText {
   text-align: center;
-  color: #000;
+  color: #252525;
   font-family: var(--fontText);
+  line-height: 1.5em;
+  padding: 0 20px;
 }
+#Service #ConteinerService #BoxService .ElementService .BoxText h3 {
+  font-size: 1.5em;
+  font-weight: 400;
+  margin-bottom: 0.5em;
+}
+#Service #ConteinerService #BoxService .ElementService .BoxText p {
+  font-size: 1em;
+}
+
 #TextSobre {
   width: 100%;
   padding: 3em 0;
@@ -54,13 +64,16 @@
 }
 #TextSobre #ConteinerTextSobre #BoxTextSobre .BoxText h3 {
   font-size: 1em;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
   color: #9fc4ce;
   margin-bottom: 1em;
 }
 #TextSobre #ConteinerTextSobre #BoxTextSobre .BoxText h1 {
   font-family: var(--fontTitle);
   font-weight: 400;
-  font-size: 2.5em;
+  font-size: 3em;
   margin-bottom: 1em;
 }
 #TextSobre #ConteinerTextSobre #BoxTextSobre .BoxText P {
@@ -108,10 +121,13 @@
 }
 #Info #ConteinerInfo #BoxInfo .SectionTitle .BoxText h3 {
   font-size: 1em;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
   color: #9fc4ce;
 }
 #Info #ConteinerInfo #BoxInfo .SectionTitle .BoxText h1 {
-  font-size: 2.5em;
+  font-size: 3em;
   font-family: var(--fontTitle);
   font-weight: 400;
 }
@@ -132,20 +148,22 @@
   width: 100%;
 }
 #Team #ConteinerTeam {
-  padding: 0 40px;
+  padding: 0 20px;
 }
 #Team #ConteinerTeam #BoxTeam {
   display: flex;
-  padding: 0 20px;
-  margin: 0 -30px;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
 }
 #Team #ConteinerTeam #BoxTeam .ElementTeam {
   display: block;
   text-align: center;
+  width: 33.33333333%;
 }
 #Team #ConteinerTeam #BoxTeam .ElementTeam .BoxImg {
-  padding: 1em;
-  margin: 0 -10px;
+  padding: 0 40px;
+  margin: 0 -20px;
 }
 #Team #ConteinerTeam #BoxTeam .ElementTeam .BoxImg img {
   width: 100%;
@@ -156,15 +174,20 @@
   color: #000;
   line-height: 1.5;
   font-weight: normal;
-  padding: 0 10px;
+  padding: 0 20px;
 }
 #Team #ConteinerTeam #BoxTeam .ElementTeam .BoxText h2 {
   font-size: 2em;
   font-weight: 400;
+  font-family: var(--fontTitle);
 }
 #Team #ConteinerTeam #BoxTeam .ElementTeam .BoxText h3 {
   font-size: 1em;
   color: #9fc4ce;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-bottom: 1em;
 }
 #Team #ConteinerTeam #BoxTeam .ElementTeam .BoxText p {
   font-size: 1em;
@@ -186,8 +209,8 @@
   width: 50%;
 }
 #Sobre #ConteinerSobre #BoxSobre .SectionImg .BoxImg {
-  padding: 1em;
-  margin: 0 -45px;
+  padding: 0 20px;
+  margin: 0 -25px;
 }
 #Sobre #ConteinerSobre #BoxSobre .SectionImg .BoxImg img {
   width: 100%;
@@ -195,18 +218,21 @@
 }
 #Sobre #ConteinerSobre #BoxSobre .SectionText {
   width: 50%;
-  padding: 0 40px;
+  padding: 0 20px;
 }
 #Sobre #ConteinerSobre #BoxSobre .SectionText .BoxText {
   font-family: var(--fontText);
   color: #000;
-  padding: 0 20px;
+  padding: 0 10px;
   text-align: center;
   line-height: 1.5;
 }
 #Sobre #ConteinerSobre #BoxSobre .SectionText .BoxText h3 {
   font-size: 1em;
   color: #9fc4ce;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
 }
 #Sobre #ConteinerSobre #BoxSobre .SectionText .BoxText h1 {
   font-size: 2.5em;
@@ -215,4 +241,151 @@
 }
 #Sobre #ConteinerSobre #BoxSobre .SectionText .BoxText p {
   font-size: 1em;
+}
+
+@media screen and (max-width: 845px) {
+  #TextSobre #ConteinerTextSobre {
+    padding: 20px;
+  }
+  #TextSobre #ConteinerTextSobre #BoxTextSobre {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 845px) {
+  #Team #ConteinerTeam {
+    padding: 0 20px;
+  }
+  #Team #ConteinerTeam #BoxTeam {
+    flex-wrap: wrap;
+    padding: 0 20px;
+  }
+  #Team #ConteinerTeam #BoxTeam .ElementTeam {
+    display: flex;
+    flex-direction: column;
+    width: 45.5555555%;
+    margin-bottom: 2em;
+  }
+  #Team #ConteinerTeam #BoxTeam .ElementTeam .BoxImg {
+    padding: 0 40px;
+    margin: 0 -10px;
+  }
+  #Team #ConteinerTeam #BoxTeam .ElementTeam .BoxImg img {
+    max-width: 400px;
+  }
+  #Team #ConteinerTeam #BoxTeam .ElementTeam .BoxText {
+    padding: 0 20px;
+  }
+}
+@media screen and (max-width: 845px) {
+  #Sobre {
+    padding: 3em 0;
+    width: 100%;
+  }
+  #Sobre #ConteinerSobre {
+    padding: 0 20px;
+  }
+  #Sobre #ConteinerSobre #BoxSobre {
+    flex-direction: column;
+    gap: 3em;
+  }
+  #Sobre #ConteinerSobre #BoxSobre .SectionImg {
+    width: 70%;
+  }
+  #Sobre #ConteinerSobre #BoxSobre .SectionImg .BoxImg {
+    margin: 0 -25px;
+  }
+  #Sobre #ConteinerSobre #BoxSobre .SectionText {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 770px) {
+  #Service #ConteinerService {
+    padding: 0 20px;
+  }
+  #Service #ConteinerService #BoxService {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+  #Service #ConteinerService #BoxService .ElementService {
+    width: 100%;
+  }
+  #Service #ConteinerService #BoxService .ElementService .BoxText {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 770px) {
+  #TextSobre #ConteinerTextSobre {
+    padding: 20px;
+  }
+  #TextSobre #ConteinerTextSobre #BoxTextSobre {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 770px) {
+  #SectionImg #ConteinerSectionImg {
+    padding: 0 20px;
+  }
+  #SectionImg #ConteinerSectionImg #BoxSectionImg {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 770px) {
+  #Info #ConteinerInfo {
+    padding: 0 20px;
+  }
+  #Info #ConteinerInfo #BoxInfo {
+    flex-direction: column;
+  }
+  #Info #ConteinerInfo #BoxInfo .SectionTitle {
+    width: 100%;
+  }
+  #Info #ConteinerInfo #BoxInfo .SectionTitle .BoxText {
+    text-align: center;
+    margin-bottom: 3em;
+  }
+  #Info #ConteinerInfo #BoxInfo .SectionText {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 770px) {
+  #Team #ConteinerTeam {
+    padding: 0 20px;
+  }
+  #Team #ConteinerTeam #BoxTeam {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+  #Team #ConteinerTeam #BoxTeam .ElementTeam {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 2em;
+  }
+  #Team #ConteinerTeam #BoxTeam .ElementTeam .BoxImg {
+    padding: 0 40px;
+    margin: 0 -10px;
+  }
+  #Team #ConteinerTeam #BoxTeam .ElementTeam .BoxImg img {
+    max-width: 400px;
+  }
+  #Team #ConteinerTeam #BoxTeam .ElementTeam .BoxText {
+    padding: 0 20px;
+  }
+}
+@media screen and (max-width: 770px) {
+  #Sobre #ConteinerSobre {
+    padding: 0 20px;
+  }
+  #Sobre #ConteinerSobre #BoxSobre {
+    flex-direction: column;
+    gap: 3em;
+  }
+  #Sobre #ConteinerSobre #BoxSobre .SectionImg {
+    width: 100%;
+  }
+  #Sobre #ConteinerSobre #BoxSobre .SectionText {
+    width: 100%;
+  }
 }/*# sourceMappingURL=StyleSobre.module.css.map */

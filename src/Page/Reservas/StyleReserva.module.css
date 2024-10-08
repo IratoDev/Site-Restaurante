@@ -1,1 +1,208 @@
-/*# sourceMappingURL=StyleReserva.module.css.map */
+#Reservas {
+  width: 100%;
+  padding: 6em 0;
+}
+#Reservas #ConteinerReservas {
+  padding: 0 40px;
+}
+#Reservas #ConteinerReservas #BoxReservas {
+  display: flex;
+  padding: 10px;
+}
+#Reservas #ConteinerReservas #BoxReservas .SectionInfomation {
+  display: block;
+  background: #252525;
+  padding: 1em 20px;
+}
+#Reservas #ConteinerReservas #BoxReservas .SectionInfomation .BoxInfo {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  font-family: var(--fontText);
+  align-items: center;
+  color: #fff;
+  line-height: 1.5;
+  padding-top: 6em;
+  margin: 2em 0;
+}
+#Reservas #ConteinerReservas #BoxReservas .SectionInfomation .BoxInfo .BoxTitle {
+  position: absolute;
+  text-align: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0 20px;
+}
+#Reservas #ConteinerReservas #BoxReservas .SectionInfomation .BoxInfo .BoxTitle h2 {
+  font-size: 1.5em;
+  font-weight: 400;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+}
+#Reservas #ConteinerReservas #BoxReservas .SectionInfomation .BoxInfo .ElementInfo {
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+}
+#Reservas #ConteinerReservas #BoxReservas .SectionInfomation .BoxInfo .ElementInfo .BoxIcon {
+  padding: 0.5em;
+  color: #9fc4ce;
+  font-size: 2em;
+}
+#Reservas #ConteinerReservas #BoxReservas .SectionInfomation .BoxInfo .ElementInfo .BoxText {
+  padding: 0 20px;
+  margin: 0 -15px;
+  text-align: left;
+  font-family: var(--fontText);
+}
+#Reservas #ConteinerReservas #BoxReservas .SectionInfomation .BoxInfo .ElementInfo .BoxText P {
+  font-size: 0.9em;
+}
+#Reservas #ConteinerReservas #BoxReservas .SectionForm {
+  padding: 0 20px;
+}
+#Reservas #ConteinerReservas #BoxReservas .SectionForm .BoxForm {
+  padding: 0 20px;
+}
+#Reservas #ConteinerReservas #BoxReservas .SectionForm .BoxForm form {
+  display: flex;
+  align-items: end;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+#Reservas #ConteinerReservas #BoxReservas .SectionForm .BoxForm form label {
+  padding: 0 20px;
+  border: none;
+  margin-bottom: 1em;
+}
+#Reservas #ConteinerReservas #BoxReservas .SectionForm .BoxForm form label legend {
+  font-size: 1.1em;
+  font-weight: normal;
+  font-family: var(--fontText);
+}
+#Reservas #ConteinerReservas #BoxReservas .SectionForm .BoxForm form label input {
+  width: 100%;
+  padding: 1em 0;
+}
+#Reservas #ConteinerReservas #BoxReservas .SectionForm .BoxForm form label select {
+  width: 100%;
+  padding: 10px;
+  font-size: 1em;
+  font-family: var(--fontText);
+}
+#Reservas #ConteinerReservas #BoxReservas .SectionForm .BoxForm form label select option {
+  font-weight: 500;
+}
+#Reservas #ConteinerReservas #BoxReservas .SectionForm .BoxForm form label textarea {
+  width: 100%;
+  padding: 3em;
+}
+#Reservas #ConteinerReservas #BoxReservas .SectionForm .BoxForm form button {
+  padding: 1em;
+  background-color: #9fc4ce;
+  border: none;
+  color: #fff;
+  margin-bottom: 24px;
+  margin-left: 70px;
+  font-size: 1em;
+}
+
+@media screen and (max-width: 850px) {
+  #Reservas #ConteinerReservas {
+    padding: 0 20px;
+  }
+  #Reservas #ConteinerReservas #BoxReservas {
+    flex-direction: column;
+  }
+  #Reservas #ConteinerReservas #BoxReservas .SectionInfomation {
+    margin-bottom: 3em;
+  }
+  #Reservas #ConteinerReservas #BoxReservas .SectionInfomation .BoxInfo {
+    margin: 0 auto;
+  }
+  #Reservas #ConteinerReservas #BoxReservas .SectionInfomation .BoxInfo .ElementInfo {
+    width: 45.55555%;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 770px) {
+  #Reservas #ConteinerReservas {
+    padding: 0 20px;
+  }
+  #Reservas #ConteinerReservas #BoxReservas {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+  }
+  #Reservas #ConteinerReservas #BoxReservas .SectionInfomation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #252525;
+    padding: 1em 10px;
+  }
+  #Reservas #ConteinerReservas #BoxReservas .SectionInfomation .BoxInfo {
+    font-family: var(--fontText);
+    color: #fff;
+    line-height: 1.5;
+    margin: 0;
+  }
+  #Reservas #ConteinerReservas #BoxReservas .SectionInfomation .BoxInfo .ElementInfo {
+    display: flex;
+    padding: 20px 10px;
+    width: 100%;
+    margin: 0;
+  }
+  #Reservas #ConteinerReservas #BoxReservas .SectionInfomation .BoxInfo .ElementInfo .BoxIcon {
+    padding: 0.5em;
+    color: #9fc4ce;
+    font-size: 2.5em;
+  }
+  #Reservas #ConteinerReservas #BoxReservas .SectionInfomation .BoxInfo .ElementInfo .BoxText P {
+    font-size: 1em;
+  }
+  #Reservas #ConteinerReservas #BoxReservas .SectionForm {
+    padding: 0 20px;
+  }
+  #Reservas #ConteinerReservas #BoxReservas .SectionForm .BoxForm {
+    padding: 0;
+  }
+  #Reservas #ConteinerReservas #BoxReservas .SectionForm .BoxForm form {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    flex-wrap: wrap;
+    gap: 1em;
+    padding: 0 10px;
+  }
+  #Reservas #ConteinerReservas #BoxReservas .SectionForm .BoxForm form label {
+    padding: 0;
+    width: 100%;
+    margin-bottom: 0.5em;
+  }
+  #Reservas #ConteinerReservas #BoxReservas .SectionForm .BoxForm form label input {
+    width: 100%;
+    padding: 1em;
+  }
+  #Reservas #ConteinerReservas #BoxReservas .SectionForm .BoxForm form label select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    font-family: var(--fontText);
+  }
+  #Reservas #ConteinerReservas #BoxReservas .SectionForm .BoxForm form label select option {
+    font-weight: 500;
+  }
+  #Reservas #ConteinerReservas #BoxReservas .SectionForm .BoxForm form label textarea {
+    width: 100%;
+    padding: 6em 0;
+  }
+  #Reservas #ConteinerReservas #BoxReservas .SectionForm .BoxForm form button {
+    padding: 1em;
+    background-color: #9fc4ce;
+    border: none;
+    color: #fff;
+    margin-bottom: 24px;
+    font-size: 1em;
+  }
+}/*# sourceMappingURL=StyleReserva.module.css.map */

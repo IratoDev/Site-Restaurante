@@ -16,13 +16,21 @@ return(
 
         <div className={StyleRodape.ElementoRodape}>
 
+        <div className={StyleRodape.BoxElemento}>
+
+            <div className={StyleRodape.BoxImg}>
             <img src={Logo} alt="logo rodape"/>
+            </div>
 
             <p>Para uma experiência gastronômica verdadeiramente memorável, reserve uma mesa com antecedência o mais rápido possível. Venha e prove nossa comida e vinho extraordinários.</p>
 
         </div>
 
+        </div>
+
         <div className={StyleRodape.ElementoRodape}>
+
+        <div className={StyleRodape.BoxElemento}>
 
         <h3>ENDEREÇO</h3>
 
@@ -38,7 +46,11 @@ return(
 
         </div>
 
+        </div>
+
         <div className={StyleRodape.ElementoRodape}>
+
+        <div className={StyleRodape.BoxElemento}>
 
         <h3>HORÁRIO DE ATENDIMENTO</h3>
 
@@ -50,6 +62,8 @@ return(
             <li>Happy Hours: 16h00 – 18h00</li>
 
         </ul>
+
+        </div>
 
         </div>
 

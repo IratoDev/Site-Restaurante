@@ -1,1 +1,117 @@
-/*# sourceMappingURL=StyleContato.module.css.map */
+#InfoContato {
+  width: 100%;
+  padding: 6em 0;
+}
+#InfoContato #ConteinerInfo {
+  padding: 0 40px;
+}
+#InfoContato #ConteinerInfo #BoxInfo {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0 20px;
+}
+#InfoContato #ConteinerInfo #BoxInfo .ElementInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#InfoContato #ConteinerInfo #BoxInfo .ElementInfo .BoxIcon {
+  padding: 1em;
+  color: #9fc4ce;
+  font-size: 2em;
+  border: 3px solid #9fc4ce;
+  border-radius: 50%;
+}
+#InfoContato #ConteinerInfo #BoxInfo .ElementInfo .BoxText {
+  font-family: var(--fontText);
+  color: #000;
+  text-align: center;
+  line-height: 1.5;
+  margin-top: 1em;
+}
+#InfoContato #ConteinerInfo #BoxInfo .ElementInfo .BoxText h3 {
+  font-size: 1.2em;
+  font-weight: 400;
+  margin-bottom: 0.5em;
+}
+#InfoContato #ConteinerInfo #BoxInfo .ElementInfo .BoxText p {
+  font-size: 1em;
+}
+
+#Mensagem {
+  width: 100%;
+  padding: 3em 0;
+}
+#Mensagem #ConteinerMensagem {
+  padding: 0 40px;
+}
+#Mensagem #ConteinerMensagem #BoxMensagem {
+  display: flex;
+  padding: 0 20px;
+}
+#Mensagem #ConteinerMensagem #BoxMensagem .SectionEmail {
+  width: 50%;
+}
+#Mensagem #ConteinerMensagem #BoxMensagem .SectionEmail .BoxEmail {
+  padding: 0 10px;
+}
+#Mensagem #ConteinerMensagem #BoxMensagem .SectionEmail .BoxEmail form {
+  display: flex;
+  align-items: end;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+#Mensagem #ConteinerMensagem #BoxMensagem .SectionEmail .BoxEmail form input {
+  width: 100%;
+  padding: 1em;
+}
+#Mensagem #ConteinerMensagem #BoxMensagem .SectionEmail .BoxEmail form textarea {
+  width: 100%;
+  padding: 3em;
+}
+#Mensagem #ConteinerMensagem #BoxMensagem .SectionEmail .BoxEmail form button {
+  width: 100px;
+  padding: 0.5em;
+  background: #9fc4ce;
+  color: #fff;
+  border: none;
+  font-size: 1em;
+}
+#Mensagem #ConteinerMensagem #BoxMensagem .SectionEndereco {
+  width: 50%;
+}
+#Mensagem #ConteinerMensagem #BoxMensagem .SectionEndereco .BoxEndereco {
+  position: relative;
+  padding: 0 10px;
+}
+#Mensagem #ConteinerMensagem #BoxMensagem .SectionEndereco .BoxEndereco iframe {
+  width: 100%;
+  height: 500px;
+}
+
+@media screen and (max-width: 770px) {
+  #InfoContato #ConteinerInfo #BoxInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+  }
+}
+@media screen and (max-width: 770px) {
+  #Mensagem #ConteinerMensagem {
+    padding: 20px;
+  }
+  #Mensagem #ConteinerMensagem #BoxMensagem {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+  #Mensagem #ConteinerMensagem #BoxMensagem .SectionEmail {
+    width: 100%;
+  }
+  #Mensagem #ConteinerMensagem #BoxMensagem .SectionEmail .BoxEmail {
+    padding: 0 10px;
+    margin-bottom: 3em;
+  }
+  #Mensagem #ConteinerMensagem #BoxMensagem .SectionEndereco {
+    width: 100%;
+  }
+}/*# sourceMappingURL=StyleContato.module.css.map */

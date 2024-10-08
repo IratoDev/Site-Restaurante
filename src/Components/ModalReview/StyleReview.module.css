@@ -5,7 +5,7 @@
   justify-content: center;
   position: relative;
   min-width: 100%;
-  height: 100vh;
+  padding: 3em 0;
   overflow: hidden;
   background: url("../../assets/imagem/parrallax-3.jpg");
   background-repeat: no-repeat !important;
@@ -24,14 +24,14 @@
   z-index: 1;
 }
 .ConteinerReview #ConteinerText {
-  padding: 0 54px;
+  width: 80%;
   z-index: 2;
 }
 .ConteinerReview #ConteinerText .boxText {
   color: #FFF;
-  width: 80%;
   text-align: center;
   margin: 0 auto;
+  padding: 0 40px;
   font-family: var(--fontText);
 }
 .ConteinerReview #ConteinerText .boxText h3 {
@@ -54,25 +54,53 @@
 }
 .ConteinerReview #conteinerCarrosel .Slides {
   display: flex;
-  align-content: baseline;
   justify-content: center;
   min-width: 100%;
-  height: 100%;
   color: #FFF;
 }
 .ConteinerReview #conteinerCarrosel .Slides .BoxText {
   text-align: center;
-  width: 60%;
-  padding: 3.5em;
+  width: 50%;
+  padding: 3.5em 0;
   height: auto;
   font-size: 1.5em;
 }
 .ConteinerReview .BtnCarrosel {
   position: absolute;
   z-index: 3;
-  margin-right: 1.5em;
-  padding: 2em;
   background: transparent;
   margin: 0 1.5em;
-  border: 1px solid red;
+  border: none;
+}
+.ConteinerReview .BtnCarrosel i {
+  font-size: 3em;
+  color: #FFF;
+}
+
+@media screen and (max-width: 770px) {
+  .ConteinerReview #ConteinerText {
+    width: 100%;
+    z-index: 2;
+  }
+  .ConteinerReview #ConteinerText .boxText {
+    padding: 0 20px;
+  }
+  .ConteinerReview #ConteinerText .boxText h1 {
+    font-size: 3em;
+  }
+  .ConteinerReview #conteinerCarrosel .Slides .BoxText {
+    padding: 0.5em 0px;
+    width: 60%;
+  }
+}
+.BtnCarrosel {
+  position: absolute;
+  z-index: 3;
+  background: transparent;
+  margin: 0 0.5em;
+  border: none;
+}
+.BtnCarrosel i {
+  font-size: 3em;
+  color: #FFF;
 }/*# sourceMappingURL=StyleReview.module.css.map */

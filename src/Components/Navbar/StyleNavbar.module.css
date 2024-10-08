@@ -4,8 +4,6 @@ header {
   justify-content: center;
   position: fixed;
   top: 0;
-  left: 0;
-  right: 0;
   z-index: 10;
   padding: 26px 0;
   width: 100%;
@@ -16,19 +14,17 @@ header .ConteinerNavBar {
   padding: 0 30px;
 }
 header .ConteinerNavBar .ConteinerLogo {
-  flex: 1 1 0;
   padding: 0 20px;
 }
 header .ConteinerNavBar .ConteinerLogo .BoxLogo {
   padding: 0 10px;
 }
 header .ConteinerNavBar .ConteinerLogo .BoxLogo img {
-  max-width: 120px;
-  width: 100%;
+  width: 120px;
   height: auto;
 }
 header .ConteinerNavBar .ConteinerNav {
-  padding: 0 40px;
+  padding: 0 20px;
 }
 header .ConteinerNavBar .ConteinerNav .BoxNav {
   padding: 0 10px;
@@ -37,6 +33,7 @@ header .ConteinerNavBar .ConteinerNav .BoxNav {
 header .ConteinerNavBar .ConteinerNav .BoxNav ul {
   color: #fff;
   font-family: var(--fontText);
+  text-wrap: nowrap;
 }
 header .ConteinerNavBar .ConteinerNav .BoxNav ul li {
   display: inline-block;
@@ -59,4 +56,95 @@ header .ConteinerNavBar .ConteinerNav .BoxNav ul li *:hover {
   filter: none;
   border-bottom: 1px solid #9fc4ce;
   transition: all 0.5s ease-in-out;
+}
+header .ConteinerMobile {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  padding: auto 40px;
+}
+header .ConteinerMobile .ConteinerLogo {
+  width: 40%;
+  height: 100%;
+}
+header .ConteinerMobile .ConteinerLogo .BoxLogo {
+  padding: 0 10px;
+}
+header .ConteinerMobile .ConteinerLogo .BoxLogo img {
+  width: 100%;
+  height: auto;
+}
+header .ConteinerMobile .ConteinerNav {
+  padding: 0 10px;
+  position: absolute;
+  left: 0;
+}
+header .ConteinerMobile .ConteinerNav .BoxNav {
+  padding: 0 10px;
+}
+header .ConteinerMobile .ConteinerNav .BoxNav button {
+  background: none;
+  border: none;
+}
+header .ConteinerMobile .ConteinerNav .BoxNav button i {
+  font-size: 3em;
+  color: #fff;
+}
+
+#MenuMobile {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  z-index: 200;
+  background-color: #252525;
+  transition: all 500ms ease-in-out;
+  width: 60%;
+  height: 100%;
+}
+#MenuMobile #conteinerMenuMobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  width: 80%;
+  height: 80vh;
+}
+#MenuMobile #conteinerMenuMobile .BoxButton {
+  padding: 0 20px;
+}
+#MenuMobile #conteinerMenuMobile .BoxButton button {
+  padding: 1em;
+  border: none;
+  background: none;
+  color: #FFF;
+}
+#MenuMobile #conteinerMenuMobile .BoxButton button i {
+  font-size: 2em;
+}
+#MenuMobile #conteinerMenuMobile nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#MenuMobile #conteinerMenuMobile nav .ButtonNavBar {
+  font-size: 16px;
+  color: #FFF;
+  font-weight: 400;
+  line-height: 80px;
+  font-family: var(--fontText);
+  padding: 0 0.5em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+#MenuMobile #conteinerMenuMobile #BoxIcon {
+  display: flex;
+  font-size: 1.5em;
+  color: #FFF;
+  padding: 0 20px;
+}
+#MenuMobile #conteinerMenuMobile #BoxIcon i {
+  padding: 0 10px;
 }/*# sourceMappingURL=StyleNavbar.module.css.map */

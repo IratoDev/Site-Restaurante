@@ -1,7 +1,7 @@
 #Saudacao {
   position: relative;
   width: 100%;
-  height: 100vh;
+  padding: 6em 0;
 }
 #Saudacao::before {
   content: "";
@@ -29,10 +29,16 @@
 }
 #Saudacao .ConteinerSaudacao .BoxSaudacao h1 {
   font-family: var(--fontTitle);
-  font-size: 2.5em;
+  font-size: 7em;
   color: #fff;
 }
 #Saudacao .ConteinerSaudacao .BoxSaudacao h3 {
   font-size: 1rem;
   color: #fff;
+}
+
+@media screen and (max-width: 770px) {
+  #Saudacao .ConteinerSaudacao .BoxSaudacao h1 {
+    font-size: 3.5em;
+  }
 }/*# sourceMappingURL=StyleSaudacao.module.css.map */
