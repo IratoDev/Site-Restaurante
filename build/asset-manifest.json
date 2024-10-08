@@ -1,7 +1,12 @@
 {
   "files": {
+<<<<<<< HEAD
     "main.css": "/static/css/main.90c0ab75.css",
     "main.js": "/static/js/main.fdc5e337.js",
+=======
+    "main.css": "/static/css/main.bb624320.css",
+    "main.js": "/static/js/main.617719d6.js",
+>>>>>>> 75e93a20b9ad71fb2eea0cfd934deb32c3d9682f
     "static/media/parallax-bkg1.jpg": "/static/media/parallax-bkg1.f6abc7c43552a97c0838.jpg",
     "static/media/contact-us.jpg": "/static/media/contact-us.dfbf1bc4a9f46d12303f.jpg",
     "static/media/parallax-2.jpg": "/static/media/parallax-2.981a49e48859bc91542c.jpg",
@@ -22,11 +27,20 @@
     "static/media/team-2.jpg": "/static/media/team-2.d041bab0502d5b63143f.jpg",
     "static/media/team-4.jpg": "/static/media/team-4.0ecc5926874591ee0d6f.jpg",
     "index.html": "/index.html",
+<<<<<<< HEAD
     "main.90c0ab75.css.map": "/static/css/main.90c0ab75.css.map",
     "main.fdc5e337.js.map": "/static/js/main.fdc5e337.js.map"
   },
   "entrypoints": [
     "static/css/main.90c0ab75.css",
     "static/js/main.fdc5e337.js"
+=======
+    "main.bb624320.css.map": "/static/css/main.bb624320.css.map",
+    "main.617719d6.js.map": "/static/js/main.617719d6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bb624320.css",
+    "static/js/main.617719d6.js"
+>>>>>>> 75e93a20b9ad71fb2eea0cfd934deb32c3d9682f
   ]
 }
