@@ -53,7 +53,7 @@ return () => {
 
 const Navegacao =()=>{
 
-if(Width >= 760){
+if(Width >= 845){
 
 return <div className={StyleNavBar.ConteinerNavBar}>
 
@@ -145,7 +145,9 @@ export function MenuMobile(){
 const { ButtonMenu, setButtonMenu } = useMyContext();
 const [WidthMenu, setWidthMenu] = useState(window.innerWidth);
 
-
+const handleButtonClick = () => {
+setButtonMenu(!ButtonMenu);
+};
 
 function TransicaoNav(){
 
@@ -171,7 +173,7 @@ return () => {
 
 const Menu = ()=>{
 
-if(ButtonMenu && WidthMenu < 751){
+if(ButtonMenu && WidthMenu < 845){
 
 return <div id={StyleNavBar.MenuMobile}>
 
@@ -179,7 +181,7 @@ return <div id={StyleNavBar.MenuMobile}>
 
 <div className={StyleNavBar.BoxButton}>
 
-    <button> <i class="bi bi-x-lg"></i> </button>
+    <button onClick={handleButtonClick}><i class="bi bi-x-lg"></i> </button>
 
 </div>
 

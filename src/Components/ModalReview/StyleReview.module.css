@@ -91,6 +91,7 @@
   .ConteinerReview #conteinerCarrosel .Slides .BoxText {
     padding: 0.5em 0px;
     width: 60%;
+    font-size: 1em;
   }
 }
 .BtnCarrosel {

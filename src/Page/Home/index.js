@@ -19,8 +19,6 @@ export default function HomePage(){
 
 const[CurrentItem, setCurrentItem] = useState(0);
 const ConteinerSlide = useRef();
-
-
 const { isVisible } = useMyContext();
 
 useEffect(()=>{
