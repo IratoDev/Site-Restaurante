@@ -33,7 +33,7 @@ useEffect(() => {
 
     if (ConteinerSlide.current) {
       ConteinerSlide.current.style.transform = `translate3d(${-CurrentItem * 100}%, 0, 0)`;
-      ConteinerSlide.current.style.transition = `transform ${Time + 2} ease-in-out`;
+      ConteinerSlide.current.style.transition = `transform ${Time} ease-in-out`;
     }
   }, [CurrentItem, Time]);
 
