@@ -18,54 +18,69 @@ import { ObservedElement, useMyContext } from "../../Mycontext/Context";
 export default function HomePage(){
 
 const[CurrentItem, setCurrentItem] = useState(0);
+const [opacity, setOpacity] = useState(0);
 const ConteinerSlide = useRef();
+const [Time, setTime] = useState(8000)
+
 const { isVisible } = useMyContext();
 
-useEffect(()=>{
-
-if(CurrentItem > 2){
-
-setCurrentItem(0)
-
-}if(CurrentItem<0){
-   
-setCurrentItem(2)
-
-}
-
-if (ConteinerSlide.current) {
-    // Acessa e manipula diretamente o elemento DOM
-    ConteinerSlide.current.style.transform = `translate3d(${-CurrentItem * 100}%, 0, 0)`;
-    ConteinerSlide.current.style.transition= "transform 1.5s ease-in-out";
-    ConteinerSlide.current.style.opacity= "1";
-
-}
-
-
-},[CurrentItem])
-
-
 useEffect(() => {
+    if (CurrentItem > 2) {
+      setCurrentItem(0);
+    } else if (CurrentItem < 0) {
+      setCurrentItem(2);
+    }
+
+    if (ConteinerSlide.current) {
+      ConteinerSlide.current.style.transform = `translate3d(${-CurrentItem * 100}%, 0, 0)`;
+      ConteinerSlide.current.style.transition = `transform ${Time + 2} ease-in-out`;
+    }
+  }, [CurrentItem, Time]);
+
+  // Lógica de animação para mudança de opacidade
+  useEffect(() => {
+    if (ConteinerSlide.current) {
+      // Reseta a opacidade para 0 ao iniciar o slide
+      ConteinerSlide.current.style.opacity = "0";
+      
+      // Incrementa a opacidade gradualmente após o slide ser aplicado
+      setTimeout(() => {
+        setOpacity(1); // Atualiza o estado de opacidade
+      }, 1000); // Aguarda um tempo antes de iniciar o fade-in
+
+      ConteinerSlide.current.style.opacity = opacity; // Aplica a opacidade
+      ConteinerSlide.current.style.transition = "opacity 2s ease-in-out"; // Transição suave
+    }
+  }, [CurrentItem, opacity]);
+
+  // Lógica de intervalo automático para trocar slides
+  useEffect(() => {
     const interval = setInterval(() => {
-        setCurrentItem((prevItem) => (prevItem + 1) % 3);
-        ConteinerSlide.current.style.opacity= "0";
-    }, 5000);
+      setCurrentItem((prevItem) => (prevItem + 1) % 3);
+      setOpacity(0); // Zera a opacidade ao iniciar a transição
+    }, Time);
 
-    // Limpar o intervalo ao desmontar o componente
-    return () => clearInterval(interval);
-}, []);
+    return () => clearInterval(interval); // Limpa o intervalo ao desmontar
+  }, [Time]);
 
-function BtnLeft(){
+  // Funções de navegação dos botões
+  function BtnLeft() {
+    setOpacity(0); // Zera a opacidade ao clicar no botão
+    setTime(10000);
+    setTimeout(() => {
+      setCurrentItem(CurrentItem - 1); // Muda o slide após um pequeno atraso
+      setTime(8000);
+    }, 500); 
+  }
 
-setCurrentItem(CurrentItem-1);
-
-}
-
-function BtnRight(){
-
-    setCurrentItem(CurrentItem+1);
-
-}
+  function BtnRight() {
+    setOpacity(0); // Zera a opacidade ao clicar no botão
+    setTime(10000);
+    setTimeout(() => {
+      setCurrentItem(CurrentItem + 1); // Muda o slide após um pequeno atraso
+      setTime(8000);
+    }, 500);
+  }
 
 return(
 
